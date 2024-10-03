@@ -16,7 +16,7 @@ export const LinhaLivro: React.FC<LinhaLivroProps> = ({ livro, excluir }) => {
             <td>{livro.autores.join(", ")}</td>
             <td>{nomeEditora}</td>
             <td>
-                <button onClick={() => excluir(livro.codigo)}>Excluir</button>
+                <button className="btn btn-danger" onClick={() => excluir(livro.codigo)}>Excluir</button>
             </td>
         </tr>
     );

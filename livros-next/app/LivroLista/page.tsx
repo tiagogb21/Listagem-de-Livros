@@ -39,16 +39,16 @@ export default function LivroLista () {
             <Head>
                 <title>Lista de Livros</title>
             </Head>
-            <Menu />
-            <main>
-                <h1>Lista de Livros</h1>
-                <table>
-                    <thead>
+            {/* <Menu /> */}
+            <main className="container col-12 m-4 flex flex-col gap-4">
+                <h1 className="text-2xl font-bold">Lista de Livros</h1>
+                <table className="table">
+                    <thead className="thead-dark">
                         <tr>
-                            <th>Título</th>
-                            <th>Autores</th>
-                            <th>Editora</th>
-                            <th>Ações</th>
+                            <th scope="col">Título</th>
+                            <th scope="col">Autores</th>
+                            <th scope="col">Editora</th>
+                            <th scope="col">Ações</th>
                         </tr>
                     </thead>
                     <tbody>
